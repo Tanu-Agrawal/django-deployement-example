@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO RELATIVE URL TEMPLATES PAGE!!</h1>
+
+     <!-- The "basic_app" written here should matchup with the "app_name" string in urls.py file of the applcation -->
+     <!-- 'other' is the 'name' attribute of that url pattern -->
+     <!-- dont leave spaces between the ' and the basic_app or between the other and the ' -->
+     <a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a><br>
+
+     <!-- it direct us to the admin which has a built in view named 'index' -->
+     <a href="{% url 'admin:index' %}">the admin page</a><br>
+
+     <!-- to get back to the index page -->
+     <a href="{% url 'index' %}">back to index page</a>
+
+  </body>
+</html>

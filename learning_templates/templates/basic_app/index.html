@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{%  extends "basic_app/base.html" %}
+  {% block body_block %}
+
+    <h1>WELCOME TO INDEX</h1>
+    <h2>this is an example of template inheritance</h2><br>
+     <!--  TEMPLATES FILTER -->
+    <h3>{{ text|cut:'world' }}</h3><br>
+    <h3>{{ text|upper }}</h3><br>
+    <h4>{{ number|add:"99" }}</h4>
+  {% endblock %}
